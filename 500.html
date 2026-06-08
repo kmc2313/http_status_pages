@@ -1,15 +1,49 @@
 <!doctype html>
 <html lang="ja">
-<meta charset="utf-8">
-<title>500 Internal Server Error</title>
-<style>
-body{text-align:center;font-family:sans-serif;margin:0}
-h1{background:#333;color:white;margin:0;padding:1em}
-.dummy{font-size:128px}
-</style>
+<head>
+  <meta charset="utf-8">
+  <title>500 Internal Server Error</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      margin: 0;
+      background: #f8f4f1;
+      color: #333;
+    }
+
+    h1 {
+      background: #7a2e2e;
+      color: white;
+      margin: 0;
+      padding: 1em;
+      font-size: 40px;
+    }
+
+    .error-img {
+      width: 240px;
+      margin-top: 40px;
+      border-radius: 12px;
+    }
+
+    .message {
+      font-size: 20px;
+      margin-top: 24px;
+    }
+
+    .sub-message {
+      color: #666;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+
 <body>
-<h1>500 Internal Server Error</h1>
-<div class="dummy">💥</div>
-<p>サーバの中でなんか壊れたわ。</p>
+  <h1>500 Internal Server Error</h1>
+
+  <img src="/http_status_pages/images/harinezumierror.jpg" alt="困っているハリネズミの画像" class="error-img">
+
+  <p class="message">サーバーがちょっと混乱しているみたい</p>
+  <p class="sub-message">時間をおいて、もう一度アクセスしてみてね</p>
 </body>
 </html>
